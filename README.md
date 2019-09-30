@@ -1,5 +1,8 @@
 # runtime
 
+### PreInstall
+Download latest [runtime](https://github.com/sealstore/runtime/releases/download/v1.2/runtime) on release page.
+
 ### Install Docker
 install container from url:
    location file:
@@ -87,14 +90,14 @@ use  --pk=/root/.ssh/id_rsa is private key login
 ### Print Download Url
 print download url for docker:
  ```shell script
-  runtime print --d
+  runtime print -d
 ```
 
 the docker Newest version is v19.03.0.
 ex:
 
 ```shell script
-cuisongliu@cuisongliu-PC:~$ runtime print --d
+cuisongliu@cuisongliu-PC:~$ runtime print -d
 https://download.docker.com/linux/static/stable/x86_64/docker-17.03.0-ce.tgz
 https://download.docker.com/linux/static/stable/x86_64/docker-17.03.1-ce.tgz
 https://download.docker.com/linux/static/stable/x86_64/docker-17.03.2-ce.tgz
