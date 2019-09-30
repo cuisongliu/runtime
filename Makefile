@@ -6,6 +6,8 @@ generator-containerd:
 generator:
 	go get -u github.com/a-urth/go-bindata/...
 	go-bindata -pkg command -o install/command/assert.go install/command/
-	export GO111MODULE="on" && go get && go run main.go print
 build:
 	export GO111MODULE="on" && go get && go build -o runtime
+test:
+	./runtime print
+	./runtime print -d
