@@ -6,7 +6,7 @@ generator-containerd:
 generator:
 	wget https://github.com/cuisongliu/go-bindata/releases/download/v1.0/go-bindata
 	chmod a+x go-bindata
-	mv go-bindata /usr/local/bin/go-bindata
+	sudo mv go-bindata /usr/local/bin/go-bindata
 	go-bindata -pkg command -o install/command/assert.go install/command/
 build:
 	export GO111MODULE="on" && go get && go build -o runtime
