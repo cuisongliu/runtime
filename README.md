@@ -1,13 +1,10 @@
-# container-install
-
-### PreInstall
-Download latest [container-install](https://github.com/cuisongliu/container-install/releases/download/v1.2/container-install) on release page.
+# runtime
 
 ### Install Docker
 install container from url:
    location file:
   ```shell script
-   container-install install \
+   runtime install \
           -d \
           --host 172.16.213.131 \
           --host 172.16.213.132 \
@@ -20,7 +17,7 @@ install container from url:
 ```
    remote url:
   ```shell script
-   container-install install \
+   runtime install \
           -d \
           --host 172.16.213.131 \
           --host 172.16.213.132 \
@@ -36,7 +33,7 @@ install container from url:
 install container from url:
    location file:
   ```shell script
-   container-install install \
+   runtime install \
           --host 172.16.213.131 \
           --host 172.16.213.132 \
           --user root \
@@ -48,7 +45,7 @@ install container from url:
 ```
    remote url:
   ```shell script
-   container-install install  \
+   runtime install  \
           --host 172.16.213.131 \
           --host 172.16.213.132 \
           --user root \
@@ -62,7 +59,7 @@ install container from url:
 ### UnInstall Docker
 uninstall container:
   ```shell script
-   container-install uninstall  \
+   runtime uninstall  \
           -d \
           --host 172.16.213.131 \
           --host 172.16.213.132 \
@@ -74,7 +71,7 @@ uninstall container:
 ### UnInstall Containerd
 uninstall container:
   ```shell script
-   container-install uninstall \
+   runtime uninstall \
           --host 172.16.213.131 \
           --host 172.16.213.132 \
           --user root \
@@ -90,14 +87,14 @@ use  --pk=/root/.ssh/id_rsa is private key login
 ### Print Download Url
 print download url for docker:
  ```shell script
-  container-install print --d
+  runtime print --d
 ```
 
 the docker Newest version is v19.03.0.
 ex:
 
 ```shell script
-cuisongliu@cuisongliu-PC:~$ container-install print --d
+cuisongliu@cuisongliu-PC:~$ runtime print --d
 https://download.docker.com/linux/static/stable/x86_64/docker-17.03.0-ce.tgz
 https://download.docker.com/linux/static/stable/x86_64/docker-17.03.1-ce.tgz
 https://download.docker.com/linux/static/stable/x86_64/docker-17.03.2-ce.tgz
@@ -129,7 +126,7 @@ https://download.docker.com/linux/static/stable/x86_64/docker-19.03.0.tgz
 the containerd Newest version is v1.2.7
 ex:
 ```shell script
-cuisongliu@cuisongliu-PC:~$ container-install print
+cuisongliu@cuisongliu-PC:~$ runtime print
 https://github.com/containerd/containerd/releases/download/v1.1.0/containerd-1.1.0.linux-amd64.tar.gz
 https://github.com/containerd/containerd/releases/download/v1.1.1/containerd-1.1.1.linux-amd64.tar.gz
 https://github.com/containerd/containerd/releases/download/v1.1.2/containerd-1.1.2.linux-amd64.tar.gz
